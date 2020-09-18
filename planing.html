@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades básicas de CSS, Display: inline, block, inline-block</title>
+</head>
+<style>
+    span {
+        font-weight: bold;
+    }
+
+    li {
+        list-style: circle;
+    }
+</style>
+<body>
+    <header>
+        <h1>Propiedades básicas de CSS, Display: inline, block, inline-block</h1>
+    </header>
+
+    <div id="obj">
+        <h2>1. OBJETIVO DEL SITIO:</h2>
+        <p><span>Objetivo General:</span> Explicar informativamente las propiedades básicas de CSS y como hacer uso de ellas</p>
+        <ul>
+            <li><span>Objetivo Especifico 1:</span> Demostrar de modo ameno las propiedades básicas de CSS</li>
+            <li><span>Objetivo Especifico 2:</span> Desarrollar una explicación de las caracteristicas de CSS Display: inline, block, inline-block</li>
+            <li><span>Objetivo Especifico 3:</span> Enseñar al usuario como hacer uso de las propiedades básicas de CSS.</li>
+        </ul>
+    </div>
+
+    <div id="material">
+        <h2>2. Materiales (Referencias)</h2>
+        <p>Alarcon, J. (2020). ¿Qué diferencias hay entre display:block, inline e inline-block en CSS? - campusMVP.es. Retrieved 17 September 2020, from <a href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx">https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx</a></p>
+        <p>Firefox, M. (2020). display. Retrieved 17 September 2020, from <a href="https://developer.mozilla.org/es/docs/Web/CSS/display">https://developer.mozilla.org/es/docs/Web/CSS/display</a></p>
+        <p>F, A. (2020). Retrieved 17 September 2020, from <a href="https://www.youtube.com/watch?v=UvdvhMoj_Bo&ab_channel=EDteam">https://www.youtube.com/watch?v=UvdvhMoj_Bo&ab_channel=EDteam</a></p>
+    </div>
+
+    <section id="contenido">
+        <h2>3. Contenido</h2>
+        <h3>¿Qué y cuales son las propiedades basicas de CSS?</h3>
+        <p>La propiedad CSS display especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible). </p>
+
+        <h3>¿Que significa esto?</h3>
+        <p>Formalmente la propiedad display establece los tipos de visualización interna y externa de un elemento. La tipo externa establece la participacion de un elemento en flow layout; la tipo interna establece el layout(Diseño) de los hijos. Algunos valores de display estan totalmente definidos con sus especificaciones propias; por ejemplo el detalle de que pasa cuando display: flex es declarado y definido en la especificacion de Modelo Flexible de Caja(Flexible Box Model specification) de CSS.</p>
+        
+        <h3>¿Qué diferencias hay entre display:block, inline e inline-block en CSS?</h3>
+        <p>Una duda típica a la hora de trabajar con HTML y CSS es tener claras las diferencias que existen entre elementos de bloque y elementos en línea, así que vamos a intentar arrojar un poco de luz sobre este tema.</p>
+        
+        <h3>Elementos en línea</h3>
+        <p>Para explicarlo de manera sencilla, y simplificando, ciertas etiquetas HTML no afectan en absoluto al flujo de los demás elementos, limitándose a marcar ciertos fragmentos con una determinada semántica y dejando que el texto y otros elementos contiguos sigan fluyendo en la misma línea, colocándose a ambos lados de dicho elemento.</p>
+        
+        <h3>Ejemplo</h3>
+        <img src="Imgs/1.PNG" alt="">
+
+        <h3>Elementos de bloque</h3>
+        <p>Por el contrario, ciertas etiquetas se renderizan en el navegador en líneas independientes, no mezcladas con el resto del texto.  Ejemplos de estas etiquetas son los encabezados (h1 hasta h6), las citas en bloque (blockquote), por supuesto los párrafos (p), y quizá la más conocida de todas que es la etiqueta div usada normalmente para envolver a otros elementos. A estos elementos se les denomina elementos de bloque.</p>
+
+        <h3>Ejemplo</h3>
+        <p>Siguiendo con el mismo ejemplo anterior, si simplemente sustituimos los span por elementos div, ahora las cajas son elementos de bloque, y se renderizarán de la siguiente manera:</p>
+        <img src="Imgs/2.PNG" alt="">            
+
+        <h3>Diferencias</h3>
+        <p><span>block:</span> hace que el comportamiento del elemento sea como un bloque.</p>
+        <p><span>inline:</span> el elemento se renderizará en línea con otros elementos.</p>
+        <p><span>inline-block:</span> el elemento tendrá un comportamiento mezcla entre los dos anteriores</p>
+        <p>El tercer valor de la lista anterior es muy interesante ya que permite obtener un comportamiento intermedio entre los otros dos. Los elementos inline-block fluyen con el texto y demás elementos como si fueran elementos en-línea y además respetan el ancho, el alto y los márgenes verticales. Son lo mejor de los dos mundos.</p>
+        <img src="Imgs/3.PNG" alt="">
+
+        <h3>Maquetación:</h3>
+        <img src="Imgs/Mockup.png" alt="" width="40%">
+        <p>Enlace a la maquetación: <a href="https://balsamiq.cloud/sww8gft/p830rnf">https://balsamiq.cloud/sww8gft/p830rnf</a></p>
+    </section>
+</body>
+</html>
